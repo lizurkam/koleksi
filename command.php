@@ -38,12 +38,12 @@ function cfgs(){
 	}
 }
 function AvFunc($list = array()){
-    foreach($list as $entry){
+	foreach($list as $entry){
 		if(!function_exists($entry)){
-            return false;
-        }
-    }
-    return true;
+			return false;
+		}
+	}
+	return true;
 }
 function expandPath($path){
     if(preg_match("#^(~[a-zA-Z0-9_.-]*)(/.*)?$#", $path, $match)){
